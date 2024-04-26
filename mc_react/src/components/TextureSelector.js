@@ -26,12 +26,10 @@ export const TextureSelector = () => {
 		const KV = {
 			Key1: 'Digit1',
 			Key2: 'Digit2',
-
-		    Key3: 'Digit3',
+                        Key3: 'Digit3',
 			Key4: 'Digit4',
-            Key5: 'Digit5',
-
-			Key6: 'Digit6',
+                        Key5: 'Digit5',
+                        Key6: 'Digit6',
 			Key7: 'Digit7',
 			key8: 'Digit8',
 			key9: 'Digit9'
@@ -39,10 +37,9 @@ export const TextureSelector = () => {
 	})
 		useEffect(() => {
 			const textures = {
-			       Key1, Key2, Key3,
-				Key4, Key5,
-				Key6, Key7,
-				Key8, Key9
+			        Key1, Key2, Key3,
+				Key4, Key5, Key6, 
+				Key7, Key8, Key9
 			}
 			const pressedTexture = Object.entries(textures).find(([k, v]) => v)
 			if (pressedTexture) {
