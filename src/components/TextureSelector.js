@@ -6,17 +6,13 @@ import {Digit1,Digit2,Digit3,Digit4, Digit5
 	,Digit6,Digit7,Digit8,Digit9}
 	from '../KV/Slots';
 export {Key1,Key2,Key3,Key4,Key5, Key6,Key7,Key8,Key9}
-export {Digit1,Digit2,Digit3,Digit4, Digit5
-	,Digit6,Digit7,Digit8,Digit9}
-	import {Digit1Img,Digit2Img,Digit3Img,Digit4Img, Digit5Img
-		,Digit6Img,Digit7Img,Digit8Img,Digit9Img}
+export {Digit1,Digit2,Digit3,Digit4, Digit5,Digit6,Digit7,Digit8,Digit9}
+	import {Digit1Img,Digit2Img,Digit3Img,Digit4Img,Digit5Img,Digit6Img,Digit7Img,Digit8Img,Digit9Img}
 		from '../KV/Slots';
-	export {Digit1Img,Digit2Img,Digit3Img,Digit4Img, Digit5Img
-		,Digit6Img,Digit7Img,Digit8Img,Digit9Img}
+	export {Digit1Img,Digit2Img,Digit3Img,Digit4Img, Digit5Img,Digit6Img,Digit7Img,Digit8Img,Digit9Img}
 	import {Digit1Texture,Digit2Texture,Digit3Texture,Digit4Texture, 
 		Digit5Texture,Digit6Texture,Digit7Texture,Digit8Texture,Digit9Texture}
-from {Digit1Texture,Digit2Texture,Digit3Texture,Digit4Texture
-		,Digit5Texture,Digit6Texture,Digit7Texture,Digit8Texture,Digit9Texture}			
+from {Digit1Texture,Digit2Texture,Digit3Texture,Digit4Texture,Digit5Texture,Digit6Texture,Digit7Texture,Digit8Texture,Digit9Texture}			
 
 export const TextureSelector = () => {
 	    const [Visible, setVisible] = useState(false)
