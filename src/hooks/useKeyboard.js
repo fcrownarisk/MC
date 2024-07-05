@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-import{Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9} from '../KV/Inventory'
+import {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9} from '../KV/Inventory'
 export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
     function actionByKey(key){
 		const keyActionMap = {
