@@ -7,24 +7,19 @@ export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
 			KeyS: 'moveBackward',
 			KeyA: 'moveLeft',
 			KeyD: 'moveRight',
-
 			KeyE: 'openInventory',
 			keyQ: 'openSlots',
-
 			Key1: 'Digit1',
 			Key2: 'Digit2',
 			Key3: 'Digit3',
 			Key4: 'Digit4',
-
-			Key5: 'Digit5',
-
+			Key5: 'Digit5', 
 			Key6: 'Digit6',
-		    Key7: 'Digit7',
+		        Key7: 'Digit7',
 			Key8: 'Digit8',
 			key9: 'Digit9'
           	}
 		}
-
    export const useKeyboard = () => {
 	const [actions, setActions] = useState({
 		moveForward: false,
@@ -35,12 +30,10 @@ export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
 		openSlots:false,
 
 	})
-
        const useKeyboard = () => {
        const [actions, setActions] = useEffect({
-
-         	Digit1: false,
-			Digit2: false,
+         	        Digit1: false,
+		 	Digit2: false,
 
 			Digit3: false,
 			Digit4: false,
@@ -53,7 +46,6 @@ export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
 		})
 		return keyActionMap[key]
 	}
-
 	const handleKeyDown = useCallback((e) => {
 		const action = actionByKey(e.code)
 		if (action) {
@@ -65,7 +57,6 @@ export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
 			})
 		}
 	}, [])
-
 	const handleKeyUp = useCallback((e) => {
 		const action = actionByKey(e.code)
 		if (action) {
@@ -77,7 +68,6 @@ export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
 			})
 		}
 	}, [])
-
 	useEffect(() => {
 		document.addEventListener('keydown', handleKeyDown)
 		document.addEventListener('keyup', handleKeyUp)
@@ -86,6 +76,5 @@ export {Key1,key2,key3,Key4,Key5,Key6,Key7,Key8,key9}
 			document.removeEventListener('keyup', handleKeyUp)
 		}
 	}, [handleKeyDown, handleKeyUp])
-
 	return actions
 }
